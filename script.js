@@ -29,7 +29,7 @@ function reverseFormat(num){
 }
 
 for(let i = 0; i < operatorButton.length; i++){
-	operatorButton[i].addEventListener('click',function(){
+	operatorButton[i].addEventListener('mouseover',function(){
 		if(this.id === "clear"){
 			printOutputHistory("");
 			printOutput("");
@@ -69,7 +69,7 @@ for(let i = 0; i < operatorButton.length; i++){
 }
 
 for(i = 0; i < numberButton.length; i++){
-  numberButton[i].addEventListener('click', function(){
+  numberButton[i].addEventListener('mouseover', function(){
     let output = reverseFormat(getOutput());
     if(output !== NaN){
       output = output+this.id;
